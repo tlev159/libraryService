@@ -1,0 +1,29 @@
+POST http://localhost:8080/api/authors
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Wahrig"
+}
+
+###
+GET http://localhost:8080/api/authors
+Accept: application/json
+
+###
+POST http://localhost:8080/api/authors/2/book
+Content-Type: application/json
+Accept: application/json
+
+{
+  "isbn": "123456789",
+  "title": "Wie sagt man es auf deutsch"
+}
+
+###
+DELETE http://localhost:8080/api/authors
+Content-Type: application/json
+
+{
+  "id": 1
+}
